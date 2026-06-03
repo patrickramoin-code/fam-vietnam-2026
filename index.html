@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAM Vietnam 2026</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FAM Vietnam 2026</h1>
+    <p>Évaluation terrain Alba Touring</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Voyage</h2>
+      <input id="nomVoyage" value="FAM Trip Vietnam 2026">
+      <input id="evaluateur" placeholder="Évaluateur">
+      <button onclick="sauverInfos()">Enregistrer</button>
+    </section>
+
+    <section class="card">
+      <h2>Journées</h2>
+      <div id="listeJours"></div>
+    </section>
+
+    <section id="zoneFormulaire" class="card hidden"></section>
+
+    <section class="card">
+      <h2>Rapport</h2>
+      <button onclick="genererRapport()">Générer le rapport</button>
+      <button onclick="window.print()">Imprimer / PDF</button>
+      <button class="danger" onclick="effacer()">Réinitialiser</button>
+    </section>
+
+    <section id="rapport" class="card hidden"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
