@@ -1,0 +1,48 @@
+    cursor:pointer;
+}
+
+.danger{
+    background:#c62828;
+    color:white;
+}
+
+.hidden{
+    display:none;
+}
+
+.jour{
+    padding:10px;
+    margin:5px 0;
+    background:#e8f0fe;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.note{
+    display:flex;
+    gap:15px;
+    margin-top:8px;
+}
+
+.note label{
+    width:auto;
+}
+
+textarea{
+    min-height:120px;
+}
+
+@media print{
+    button{
+        display:none;
+    }
+
+    body{
+        background:white;
+    }
+
+    .card{
+        box-shadow:none;
+        border:1px solid #ccc;
+    }
+}
